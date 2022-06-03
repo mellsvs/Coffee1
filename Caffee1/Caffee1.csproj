@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24B9CB61-AADE-4B37-ADCF-F3934E1B6EC8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Caffee1</RootNamespace>
+    <AssemblyName>Caffee1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroSet UI, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MetroSet_UI.2.0.0\lib\net45\MetroSet UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasvuruGor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasvuruGor.Designer.cs">
+      <DependentUpon>BasvuruGor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BizeKatil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BizeKatil.Designer.cs">
+      <DependentUpon>BizeKatil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalisanaMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalisanaMain.Designer.cs">
+      <DependentUpon>CalisanaMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalisanGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalisanGiris.Designer.cs">
+      <DependentUpon>CalisanGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Davet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Davet.Designer.cs">
+      <DependentUpon>Davet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firsatlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firsatlar.Designer.cs">
+      <DependentUpon>Firsatlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Franchise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Franchise.Designer.cs">
+      <DependentUpon>Franchise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FranGor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FranGor.Designer.cs">
+      <DependentUpon>FranGor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupPics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupPics.Designer.cs">
+      <DependentUpon>GroupPics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HwPics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HwPics.Designer.cs">
+      <DependentUpon>HwPics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitOl.Designer.cs">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magaza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magaza.Designer.cs">
+      <DependentUpon>Magaza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu2.Designer.cs">
+      <DependentUpon>Menu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open.Designer.cs">
+      <DependentUpon>Open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanaOzel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanaOzel.Designer.cs">
+      <DependentUpon>SanaOzel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatisMiktarics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatisMiktarics.Designer.cs">
+      <DependentUpon>SatisMiktarics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sube.Designer.cs">
+      <DependentUpon>Sube.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeGor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeGor.Designer.cs">
+      <DependentUpon>UyeGor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workers.Designer.cs">
+      <DependentUpon>Workers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yonetici.Designer.cs">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiAraYuz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiAraYuz.Designer.cs">
+      <DependentUpon>YoneticiAraYuz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>yoneticiDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BasvuruGor.resx">
+      <DependentUpon>BasvuruGor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BizeKatil.resx">
+      <DependentUpon>BizeKatil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalisanaMain.resx">
+      <DependentUpon>CalisanaMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalisanGiris.resx">
+      <DependentUpon>CalisanGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Davet.resx">
+      <DependentUpon>Davet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firsatlar.resx">
+      <DependentUpon>Firsatlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Franchise.resx">
+      <DependentUpon>Franchise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FranGor.resx">
+      <DependentUpon>FranGor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupPics.resx">
+      <DependentUpon>GroupPics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HwPics.resx">
+      <DependentUpon>HwPics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitOl.resx">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magaza.resx">
+      <DependentUpon>Magaza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu2.resx">
+      <DependentUpon>Menu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open.resx">
+      <DependentUpon>Open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SanaOzel.resx">
+      <DependentUpon>SanaOzel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatisMiktarics.resx">
+      <DependentUpon>SatisMiktarics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sube.resx">
+      <DependentUpon>Sube.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeGor.resx">
+      <DependentUpon>UyeGor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workers.resx">
+      <DependentUpon>Workers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yonetici.resx">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiAraYuz.resx">
+      <DependentUpon>YoneticiAraYuz.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="yoneticiDataSet.xsc">
+      <DependentUpon>yoneticiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="yoneticiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>yoneticiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="yoneticiDataSet.xss">
+      <DependentUpon>yoneticiDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pictures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
